@@ -1,0 +1,29 @@
+PriceResponse:
+  type: object
+  required:
+    - productId
+    - brandId
+    - priceList
+    - startDate
+    - endDate
+    - price
+    - currency
+  properties:
+    productId:
+      type: integer
+      format: int64
+    brandId:
+      type: integer
+      format: int64
+    priceList:
+      type: integer
+    startDate:
+      type: string
+      format: date-time
+    endDate:
+      type: string
+      format: date-time
+    price:
+      type: number
+    currency:
+      type: string

@@ -1,0 +1,6 @@
+BadRequestResponse:
+  description: Request parameters are invalid or missing.
+  content:
+    application/json:
+      schema:
+        $ref: '../schemas/errorResponse.yaml#/ErrorResponse'

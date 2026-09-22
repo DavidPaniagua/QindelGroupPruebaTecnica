@@ -1,0 +1,6 @@
+GetApplicablePriceResponse:
+  description: Applicable price filtered by product, brand and date.
+  content:
+    application/json:
+      schema:
+        $ref: "../schemas/priceResponse.yaml#/PriceResponse"
