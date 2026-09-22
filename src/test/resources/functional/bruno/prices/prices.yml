@@ -1,0 +1,25 @@
+info:
+  name: /prices
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/prices?brandId=1&productId=35455&applicationDate=2020-06-15T08:30:00
+  params:
+    - name: brandId
+      value: "1"
+      type: query
+    - name: productId
+      value: "35455"
+      type: query
+    - name: applicationDate
+      value: 2020-06-15T08:30:00
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

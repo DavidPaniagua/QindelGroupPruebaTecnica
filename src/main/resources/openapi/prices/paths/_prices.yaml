@@ -1,0 +1,33 @@
+get:
+  summary: Retrieves the applicable price for a product, brand and date.
+  tags:
+    - Prices
+  operationId: getApplicablePrice
+  parameters:
+    - name: applicationDate
+      in: query
+      required: true
+      schema:
+        type: string
+        format: date-time
+    - name: productId
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+    - name: brandId
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+  responses:
+    '200':
+      $ref: '../components/response/getApplicablePriceResponse.yaml#/GetApplicablePriceResponse'
+    '400':
+      $ref: '../../common/components/response/badRequestResponse.yaml#/BadRequestResponse'
+    '404':
+      $ref: '../../common/components/response/notFoundResponse.yaml#/NotFoundResponse'
+    '500':
+      $ref: '../../common/components/response/internalServerErrorResponse.yaml#/InternalServerErrorResponse'

@@ -1,0 +1,6 @@
+InternalServerErrorResponse:
+  description: Unexpected server error.
+  content:
+    application/json:
+      schema:
+        $ref: '../schemas/errorResponse.yaml#/ErrorResponse'

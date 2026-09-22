@@ -1,0 +1,21 @@
+ErrorResponse:
+  type: object
+  required:
+    - timestamp
+    - status
+    - error
+    - message
+    - path
+  properties:
+    timestamp:
+      type: string
+      format: date-time
+    status:
+      type: integer
+      format: int32
+    error:
+      type: string
+    message:
+      type: string
+    path:
+      type: string

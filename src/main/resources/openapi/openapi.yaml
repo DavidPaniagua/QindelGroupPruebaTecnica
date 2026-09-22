@@ -1,0 +1,12 @@
+openapi: 3.0.3
+info:
+  title: Prices API
+  version: 1.0.0
+
+tags:
+  - name: Prices
+    description: Module responsible for centralizing price management
+
+paths:
+  /prices:
+    $ref: "./prices/paths/_prices.yaml"
